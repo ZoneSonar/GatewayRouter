@@ -1,4 +1,23 @@
 {
+    "name": "zonesonar/gatewayrouter",
+    "description": "Router for php applications.",
+    "type": "library",
+    
+    "keywords": [
+        "events", 
+        "routers",
+        "templates",
+        "links"
+    ],
+
+    "authors": [
+        {
+            "name": "Kent Madsen",
+            "email": "kent.vejrup.madsen@designermadsen.dk",
+            "role": "Developer"
+        }
+    ],
+
     "require": {
         "monolog/monolog": "^3.5"
     },
