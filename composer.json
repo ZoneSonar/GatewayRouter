@@ -1,5 +1,5 @@
 {
-    "name": "ZoneSonar/GatewayRouter",
+    "name": "zonesonar/gatewayrouter",
     "description": "Router for php applications.",
     "require": {
         "monolog/monolog": "^3.5"
