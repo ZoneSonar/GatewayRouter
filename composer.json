@@ -1,4 +1,6 @@
 {
+    "name": "GatewayRouter",
+    "description": "Router for php applications.",
     "require": {
         "monolog/monolog": "^3.5"
     },
