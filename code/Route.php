@@ -1,23 +1,42 @@
 <?php
     namespace GatewayRouter;
 
-    use GatewayRouter\RouteBehavior 
-        as RouteBehavior;
-    
+    use GatewayRouter\RoutePathValueType
+        as RoutePathValueType;
     
     abstract class Route
     {
-        private $behavior = RouteBehavior::NONE;    
-
-        public function get_behavior(): RouteBehavior
+        public function __construct()
         {
-            return $this->behavior;
+            $this->setValuePathType(
+                RoutePathValueType::NONE
+            );
         }
 
-        public function set_behavior(
-            RouteBehavior $new_behavior
+        private $path = '*';
+
+        private $value_path_type = null;
+
+        public function getValuePathType(): RoutePathValueType
+        {
+            return $this->value_path_type;
+        }
+
+        public function setValuePathType(
+            RoutePathValueType $value
         ){
-            return $this->behavior = $new_behavior;
+            $this->value_path_type = $value;
+        }
+
+        public function getPath(): string
+        {
+            return $this->path;
+        }
+
+        public function setPath(
+            string $path
+        ){
+            $this->path = $path;
         }
     }
 ?>
