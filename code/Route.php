@@ -3,7 +3,8 @@
 
     use GatewayRouter\RoutePathValueType
         as RoutePathValueType;
-    
+
+
     abstract class Route
     {
         public function __construct()
